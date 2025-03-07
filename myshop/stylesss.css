@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.3;
+}
+
+.background {
+    background-image: url("1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center left;
+}
+
+h1 {
+    padding-bottom: 40px;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: rgb(98, 39, 149);
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    color: rgb(191, 7, 7);
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+    outline: none;
+    background: #da2859;
+    padding: 10px 40px;
+    font-size: 17px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background: #f1a6bc;
+}
+
+@media(max-width: 600px) {
+    .video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        padding: 0px;
+        margin: 0px;
+        opacity: 0.3;
+    }
+
+    .background {
+        background-image: url("1.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    p, ul, li {
+        font-size: 1em; 
+    }
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 150px; 
+    height: auto; 
+}

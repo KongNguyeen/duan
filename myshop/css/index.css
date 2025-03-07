@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif; /* Font from Google Fonts */
+    background-color: #f1f3f4; /* Light background color */
+    min-height: 100vh; /* Minimum height for body */
+}
+
+/* Background Image */
+
+
+/* Header Styles */
+header {
+    position: sticky; 
+    top: 0;
+    background: rgba(226, 20, 106, 0.9); /* Semi-transparent background */
+    z-index: 2; /* Ensure it stays on top */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Padding around nav items */
+}
+
+.logo {
+    height: 40px; /* Logo height */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* User Info Styles */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link,
+.checkout-link,
+.logout-link {
+    margin-right: 20px; 
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.logout-link {
+    margin-right: 0; 
+}
+
+.profile-link:hover,
+.checkout-link:hover,
+.logout-link:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Shop Section Styles */
+.shop {
+    padding: 20px; /* Padding for shop section */
+    position: relative; /* Ensure that the shop content is positioned relative to the container */
+    z-index: 1; /* Bring the shop section above the background */
+}
+
+.section-title {
+    font-size: 32px; /* Larger font size for section titles */
+    margin-bottom: 20px; /* Space below title */
+    color: #e0206a; /* Title color */
+}
+
+/* Product Box Styles */
+.product-box {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s; /* Smooth transform */
+    margin: 10px; /* Margin around product boxes */
+}
+
+.product-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+/* Product Image */
+.product-img {
+    width: 100%; /* Full width image */
+    height: auto; /* Auto height */
+}
+
+/* Product Title and Price */
+.product-title {
+    font-size: 20px; /* Title font size */
+    margin: 10px 0; /* Margin around title */
+}
+
+.price {
+    font-size: 18px; /* Price font size */
+    color: #333; /* Price color */
+}
+
+/* Button Styles */
+.btn-buy {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth color change */
+}
+
+.btn-buy:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styles */
+.footer {
+    align-self: start;
+    margin-top: 55px;
+    background: rgb(226, 20, 106);
+    color: #fff;
+    padding: 20px; /* Padding for footer */
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 980px) {
+    .nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .shop {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .product-box {
+        margin: 5px; /* Less margin on small screens */
+    }
+
+    .section-title {
+        font-size: 28px; /* Smaller title font size */
+    }
+}

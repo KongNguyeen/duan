@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+}
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background: #555;
+}
+.sidebar .btn-danger {
+    background: red;
+    color: #fff;
+}
+.content {
+    flex: 1;
+    padding: 15px;
+}
+.btn {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+.btn-primary {
+    background: blue;
+}
+.btn-warning {
+    background: orange;
+}
+.btn-danger {
+    background: red;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table th {
+    background: #f4f4f4;
+}
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    color: #333;
+}

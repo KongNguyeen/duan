@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 5em;
+    position: relative;
+}
+
+.giua {
+    max-width: 1068px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+.profile-link,
+.logout-link {
+    margin-right: 20px;
+}
+
+.logout-link {
+    margin-right: 0;
+}
+
+
+
+
+
+.cart-box {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.cart-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cart-img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.total {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader div {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.background {
+    background-image: url("./1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Đảm bảo ảnh nền ở phía dưới cùng */
+    margin-top: 0; /* Đặt margin-top về 0 để ảnh nền không bị dịch chuyển */
+}
+.btn-bu {
+margin: 1.5rem auto 0 auto;
+padding: 12px 20px;
+border: none;
+background: var(--main-color);
+color: var(--bg-color);
+font-size: 1rem;
+font-weight: 500;
+cursor: pointer;
+transition: background 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.btn-bu:hover {
+background: var(--text-color);
+transform: scale(1.05); /* Slight scale up effect */
+}
+.profile-link a {
+margin-right: 20px; /* Khoảng cách giữa các liên kết */
+text-decoration: none; /* Loại bỏ gạch chân */
+color: #000; /* Màu chữ mặc định */
+font-size: 16px; /* Kích thước chữ */
+}
+
+.profile-link a:last-child {
+margin-right: 0; /* Không có khoảng cách bên phải cho liên kết cuối cùng */
+}

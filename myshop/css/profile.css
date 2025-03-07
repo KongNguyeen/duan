@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 5em;
+}
+
+header {
+    position: sticky; 
+    top: 0;
+    background: rgba(226, 20, 106, 0.9);
+    z-index: 2; 
+}
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 1.5rem; /* Logo font size */
+    color: white; /* Logo color */
+    text-decoration: none; /* No underline */
+}
+
+.profile-link {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    margin-left: 15px; /* Spacing between links */
+}
+
+.profile-link:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Profile Section Styles */
+.profile {
+    max-width: 800px; /* Max width for the profile section */
+    margin: 80px auto; /* Center the profile section */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with a slight transparency */
+    padding: 20px; /* Padding inside the profile container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile h2 {
+    text-align: center; /* Center the title */
+    color: #e0206a; /* Title color */
+}
+
+/* Profile Info Styles */
+.profile-info {
+    margin-bottom: 20px; /* Spacing below profile info */
+}
+
+.profile__field {
+    margin-bottom: 15px; /* Spacing between fields */
+}
+
+.profile__field label {
+    display: block; /* Make labels block elements */
+    font-weight: bold; /* Bold labels */
+}
+
+.profile__field input, .profile__field textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.profile__field input:focus, .profile__field textarea:focus {
+    border-color: #e0206a; /* Change border color on focus */
+}
+
+/* Buttons */
+.profile__button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.profile__button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Order Table Styles */
+.order-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Spacing above the table */
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd; /* Light borders */
+    padding: 8px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.order-table th {
+    background-color: #e0206a; /* Header background color */
+    color: white; /* Header text color */
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+.order-table tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    .profile {
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    .profile__field input, .profile__field textarea {
+        font-size: 0.9rem; /* Smaller font size for inputs */
+    }
+}
