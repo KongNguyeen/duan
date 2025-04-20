@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Theme cho ứng dụng -->
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Các tùy chỉnh theme của bạn -->
+    </style>
+
+</resources>
